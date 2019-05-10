@@ -1,4 +1,4 @@
-# ATMzero
+# ATMzero - my very first version of ATM project (during Bild-IT time)
 
 Write simple ATM application.
 
