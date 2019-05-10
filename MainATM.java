@@ -31,20 +31,20 @@ public class MainATM {
 
 				Account account = new Account(accountName, balance);
 				System.out.println(
-						"The account with the account number " + account.getAccountNumber() + " has been created!");
+						"\nThe account with the account number " + account.getAccountNumber() + " has been created!");
 			} else if (choice == 2) {
 				if (Account.numberOfAccounts() == 0 || Account.numberOfAccounts() == 1) {
-					System.out.println("There are no active accounts or there is only one account!");
+					System.out.println("\nThere are no active accounts or there is only one account!");
 				} else {
-					System.out.print("Enter the account number for the source account: ");
+					System.out.print("\nEnter the account number for the source account: ");
 					accountNumberSource = input.nextLong();
 					if (Account.getAccountByAccountNumber(accountNumberSource) == null)
-						System.out.println("That account doesn't exist!");
+						System.out.println("\nThat account doesn't exist!");
 					else {
 						System.out.print("Enter the account number for the destination account: ");
 						accountNumberDestination = input.nextLong();
 						if (Account.getAccountByAccountNumber(accountNumberDestination) == null)
-							System.out.println("That account doesn't exist!");
+							System.out.println("\nThat account doesn't exist!");
 						else {
 							System.out.print("Enter the amount: ");
 							amount = input.nextDouble();
@@ -57,7 +57,7 @@ public class MainATM {
 				}
 			} else if (choice == 3) {
 				if (Account.numberOfAccounts() == 0)
-					System.out.println("There are no active accounts!");
+					System.out.println("\nThere are no active accounts!");
 				else {
 					System.out.print("Enter account number: ");
 					accountNumber = input.nextLong();
@@ -65,12 +65,12 @@ public class MainATM {
 					if (Account.getAccountByAccountNumber(accountNumber) != null)
 						Account.getAccountByAccountNumber(accountNumber).showAccountInfo();
 					else
-						System.out.println("That account doesn't exist!");
+						System.out.println("\nThat account doesn't exist!");
 				}
 			}
 		}
 		input.close();
-		System.out.println("Thank you for using Deez Atm!");
+		System.out.println("\nThank you for using Deez Atm!");
 
 	}
 

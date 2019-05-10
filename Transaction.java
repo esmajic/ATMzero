@@ -2,12 +2,12 @@ public class Transaction {
 
 	public static void transferMoney(Account sourceAccount, Account destinationAccount, double amount) {
 		if (isBalanceNegative(sourceAccount, amount)) {
-			System.out.println("The transfer is not possible, the balance will be below zero for account "
+			System.out.println("\nThe transfer is not possible, the balance will be below zero for account "
 					+ sourceAccount.getAccountNumber());
 		} else {
 			sourceAccount.setBalance(sourceAccount.getBalance() - amount);
 			destinationAccount.setBalance(destinationAccount.getBalance() + amount);
-			System.out.println("Transaction complete!");
+			System.out.println("\nTransaction complete!");
 		}
 	}
 
