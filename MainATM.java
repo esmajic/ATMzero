@@ -11,7 +11,7 @@ public class MainATM {
 		long accountNumberSource, accountNumberDestination, accountNumber;
 
 		while (choice != 0) {
-			System.out.println("Welcome to Deez Atm. Please choose your option:" + "\n1. Create account"
+			System.out.println("Welcome to ATM. Please choose your option:" + "\n1. Create account"
 					+ "\n2. Transfer money to another account" + "\n3. Show account info" + "\n0. Exit");
 			choice = input.nextInt();
 
